@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <div id="container">
+            <h1 id="timer" title="Timer">00:00:00</h1>
+            <h2 id="rgb" title="Hex Code">#d3d3d3</h2>
+
+            <div id="bttns">
+                <button id="start" onclick="start()" title="Start" tabindex="5"><i class='fas fa-play'></i></button>
+                <button id="stop" onclick="stop()" title="Pause" tabindex="5"><i class='fas fa-pause'></i></button>
+                <button onclick="reset()" title="Restart" tabindex="6"><i class='fas fa-redo-alt'></i></button>
+                <button onclick="save()" title="Save" tabindex="7"><i class='fas fa-save'></i></button>
+                <button onclick="rcg()" title="Color" tabindex="8"><i class='fas fa-pencil-alt'></i></button>
+            </div>
+
+            <div id="hist">
+                <button onclick="getslot(this)" title="Slot 1" tabindex="1">00:00:00</button>
+                <button onclick="getslot(this)" title="Slot 2" tabindex="2">00:00:00</button>
+                <button onclick="getslot(this)" title="Slot 3" tabindex="3">00:00:00</button>
+                <button onclick="getslot(this)" title="Slot 4" tabindex="4">00:00:00</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slot = document.getElementById("hist").getElementsByTagName("button")[0];
+
+    </script>
+</body>
+
+</html>

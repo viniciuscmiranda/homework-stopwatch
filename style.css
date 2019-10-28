@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    --scl: .15vw;
+}
+
+body {
+    background: #bbb;
+}
+
+#all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    background: lightgray;
+    padding: calc(16 * var(--scl));
+    text-align: center;
+    position: relative;
+    height: calc(100 * var(--scl));
+    width: calc(500 * var(--scl));
+    box-sizing: border-box;
+    box-shadow: 0 0 calc(16 * var(--scl)) rgba(0, 0, 0, .1);
+}
+
+#timer {
+    color: black;
+    opacity: .5;
+    font-size: calc(32 * var(--scl));
+}
+
+#bttns {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: calc(16 * var(--scl));
+}
+
+button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: .5;
+    color: black;
+    cursor: pointer;
+    font-size: calc(14 * var(--scl));
+    margin: calc(2 * var(--scl));
+}
+
+#stop {
+    display: none;
+}
+
+#rgb {
+    font-size: calc(12 * var(--scl));
+    opacity: .5;
+}
+
+#hist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: calc(12 * var(--scl));
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#hist button {
+    margin: var(--scl) 0;
+    cursor: pointer;
+    opacity: .5;
+}
+
+#hist button:first-child {
+    opacity: .7;
+}
+
+button:hover {
+    opacity: .7;
+}
