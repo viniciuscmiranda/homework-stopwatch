@@ -25,6 +25,7 @@ body {
     width: calc(500 * var(--scl));
     box-sizing: border-box;
     box-shadow: 0 0 calc(16 * var(--scl)) rgba(0, 0, 0, .1);
+    border-radius: 20px;
 }
 
 #timer {
